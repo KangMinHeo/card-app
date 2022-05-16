@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KBO 팀 순위 페이지</title>
+</head>
+<body>
+    <div>
+        <table border="1px" id="dynamicTable">
+            <colgroup>
+                <col width = "200px">
+                <col width = "200px">
+                <col width = "200px">
+                <col width = "200px">
+                <col width = "200px">
+                <col width = "200px">
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th>순위</th>
+                    <th>팀 명</th>
+                    <th>경기 수</th>
+                    <th>승</th>
+                    <th>무</th>
+                    <th>패</th>
+                </tr>
+            </thead>
+
+            <tbody id="dynamicTbody"></tbody>
+
+        </table>
+    </div>
+    <script>
+        function tableCreate(){
+            var html = '';
+
+            var rank = $("#inRank").val();
+            var team_name = $("#inName").val();
+            var match = $("#inMatch").val();
+            var win = $("#inWin").val();
+            var draw = $("#inDraw").val();
+            var lose = $("#inLose").val();
+
+            html += '<tr>';
+            html += '<td>'+rank+'</td>';
+            html += '<td>'+team_name+'</td>';
+            html += '<td>'+match+'</td>';
+            html += '<td>'+win+'</td>';
+            html += '<td>'+draw+'</td>';
+            html += '<td>'+lose+'</td>';
+            html += '</tr>';
+            
+            $("#dynamicTable").append(html);
+
+            $("#inRank").val();
+            $("#inName").val();
+            $("#inMatch").val();
+            $("#inWin").val();
+            $("#inDraw").val();
+            $("#inLose").val();
+        }
+    </script>
+</body>
+</html>

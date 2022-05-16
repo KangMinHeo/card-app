@@ -1,0 +1,29 @@
+@media screen and (max-width: 1200px){
+    .container{
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .btn_top, .footer .sns_wrap {
+        right: 10px;
+    }
+    .header_wrap .container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .container{
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .page_tit{
+        padding-left: 20px;
+    }
+    .sub_bg .img_wrap img{
+        height: 52px;
+    }
+    .page_tit h3{
+        padding-bottom: 6px;
+        font-size: 28px;
+    }
+}
